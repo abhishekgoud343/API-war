@@ -10,6 +10,12 @@ public class Appointment {
 
     private LocalDateTime appointmentTime;
 
+    public Appointment(int docId, int userId, LocalDateTime appointmentTime) {
+        this.docId = docId;
+        this.userId = userId;
+        this.appointmentTime = appointmentTime;
+    }
+
     public int getDocId() {
         return docId;
     }

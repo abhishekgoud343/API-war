@@ -8,8 +8,11 @@ public class Hospital {
 
     private String address;
 
-    //Shortcut to write getter setters are : Alt + Insert
-
+    public Hospital(int hospitalId, String hospitalName, String address) {
+        this.hospitalId = hospitalId;
+        this.hospitalName = hospitalName;
+        this.address = address;
+    }
 
     public int getHospitalId() {
         return hospitalId;

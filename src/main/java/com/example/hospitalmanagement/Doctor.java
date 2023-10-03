@@ -12,6 +12,20 @@ public class Doctor {
 
     private String specialization;
 
+    public Doctor(int docId, String name, int age, String gender, String specialization) {
+        this.docId = docId;
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.specialization = specialization;
+    }
+
+    public Doctor(int docId, String name, int age) {
+        this.docId = docId;
+        this.name = name;
+        this.age = age;
+    }
+
     public String getSpecialization() {
         return specialization;
     }
